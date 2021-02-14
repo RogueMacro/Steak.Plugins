@@ -1,0 +1,30 @@
+FileVersion = 1
+Dependencies = {corlib = "*", "Steak.Plugins" = "*"}
+
+[Project]
+Name = "ExampleApp"
+StartupObject = "ExampleApp.Program"
+
+[Configs.Release.Win64]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Release.Win32]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Debug.Win32]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Debug.Win64]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Paranoid.Win32]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Paranoid.Win64]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Test.Win32]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]
+
+[Configs.Test.Win64]
+PostBuildCmds = ["copy \"$(TargetDir ExamplePlugin)\\ExamplePlugin.dll\" \"$(TargetDir)\\ExamplePlugin.dll\""]

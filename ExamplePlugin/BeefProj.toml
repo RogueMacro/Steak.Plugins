@@ -1,0 +1,11 @@
+FileVersion = 1
+Dependencies = {corlib = "*", "Steak.Plugins" = "*", ExampleApp = "*"}
+
+[Project]
+Name = "ExamplePlugin"
+TargetType = "BeefDynLib"
+StartupObject = "ExamplePlugin.Program"
+
+[Configs.Debug.Win64]
+CLibType = "Static"
+BeefLibType = "Static"
